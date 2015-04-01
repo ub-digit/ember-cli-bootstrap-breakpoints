@@ -1,25 +1,16 @@
-# Ember-cli-bootstrap-breakpoints
+# ember-cli-bootstrap-breakpoints
 
-This README outlines the details of collaborating on this Ember addon.
+Expose Bootstrap breakpoints as Controller property in Ember
 
-## Installation
+## Addon Install
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+    ember install:addon
 
-## Running
+## Using
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Add `{{bootstrap-breakpoints}}` to application.hbs.
 
-## Running Tests
+This captures the browser resize event and sets the property `bootstrapBreakpoint` in ApplicationController. `bootstrapBreakpoint` will contain one of `lg`, `md`, `sm`, `xs`, which can then be used in computed properties and such within the Ember app.
 
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## License
+[Unlicense](http://unlicense.org/)
